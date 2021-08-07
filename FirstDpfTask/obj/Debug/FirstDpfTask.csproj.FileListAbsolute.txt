@@ -1,0 +1,15 @@
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\FirstDpfTask.csproj.AssemblyReference.cache
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\MainWindow.g.cs
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\App.g.cs
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\FirstDpfTask_MarkupCompile.cache
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\FirstDpfTask_MarkupCompile.lref
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\bin\Debug\FirstDpfTask.exe.config
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\bin\Debug\FirstDpfTask.exe
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\bin\Debug\FirstDpfTask.pdb
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\MainWindow.baml
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\FirstDpfTask.g.resources
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\FirstDpfTask.Properties.Resources.resources
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\FirstDpfTask.csproj.GenerateResource.cache
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\FirstDpfTask.csproj.CoreCompileInputs.cache
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\FirstDpfTask.exe
+C:\Users\Kənan\source\repos\FirstDpfTask\FirstDpfTask\obj\Debug\FirstDpfTask.pdb

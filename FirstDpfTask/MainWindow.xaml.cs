@@ -20,75 +20,46 @@ namespace FirstDpfTask
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly Random _random = new Random();
+        private const int StackPanelSecondFirstButtonUID = 4;
+        private const int ClearAllButtonUID = 0;
         public MainWindow()
         {
             InitializeComponent();
-        }
+        }         
 
-        private void btn1_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        private void btn_Click(object sender, RoutedEventArgs e)
         {
-            //Random random = new Random();
-            ////btn1.MouseDown += btn1_MouseRightButtonDown;
-            //int a = random.Next(0,255);
-            //int r = random.Next(0,255);
-            //int g = random.Next(0,255);
-            //int b = random.Next(0,255);
-            //btn1.Background = Color.FromArgb((byte)r,(byte)g,(byte)b);
-        }
-
-        private void btn1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            
-        }
-
-        private void btn2_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
-        {
+            if (sender is Button button)
+            {
+                Color randomColor = Color.FromRgb((byte)_random.Next(0, 255),(byte)_random.Next(0, 255), (byte)_random.Next(0, 255));
+                button.Background = new SolidColorBrush(randomColor);
+                MessageBox.Show($"My number is {button.Content}", "Information about button", MessageBoxButton.OK, MessageBoxImage.Information);
+                //Window1 win1 = new Window1();
+                //win1.Show();
+            }
 
         }
-
-        private void btn2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        
+        private void btn_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-
-        }
-
-        private void btn5_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void btn5_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void btn3_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void btn3_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void btn6_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void btn6_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void btn4_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void btn4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
+            if (sender is Button button)
+            {
+                Title = $"Button Content  \"{button.Content}\" is Deleted.";
+                int buttonUID = Convert.ToInt32(button.Uid);
+                if (buttonUID == ClearAllButtonUID)
+                {
+                    MainGrid.Children.Clear();
+                }
+                else if (buttonUID < StackPanelSecondFirstButtonUID)
+                {
+                    FirstStackpanle.Children.Remove(button);
+                }
+                else
+                {
+                    FirstStackpanle.Children.Remove(button);
+                }
+            }
         }
     }
 }
